@@ -1,0 +1,14 @@
+README.md
+setup.py
+api/__init__.py
+api/app.py
+api/main.py
+api/snowflake_client.py
+api/view_table_content.py
+data/__init__.py
+data/prepare_data.py
+wikibase_cortex_assistant.egg-info/PKG-INFO
+wikibase_cortex_assistant.egg-info/SOURCES.txt
+wikibase_cortex_assistant.egg-info/dependency_links.txt
+wikibase_cortex_assistant.egg-info/requires.txt
+wikibase_cortex_assistant.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+
+
+1. Prepare_data.py
+This script will:
+
+Load and clean Wikipedia content (you can start with a sample topic).
+
+Chunk the content into manageable sizes.
+
+Embed each chunk using Snowflake Cortex (CORTEX.EMBED_TEXT).
+
+Store chunks and embeddings in a Snowflake table for later vector search.
+
+
+2. Snoflake_client.py
+Using .env for username, password, and account.
+
+Creating the warehouse, database, schema, and table in code.
+
+Reading and chunking the text file.
+
+Inserting both raw text and embedded vectors using the correct SQL format to avoid the USING PARAMETERS syntax error.
+

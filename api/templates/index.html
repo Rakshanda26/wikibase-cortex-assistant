@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WikiBase Cortex Assistant</title>
+</head>
+<body>
+    <h1>Welcome to WikiBase Cortex Assistant (Flask RAG App)</h1>
+    <p>Ask your question and get an answer based on Wikipedia content!</p>
+
+    <form action="/ask" method="post">
+        <label for="question">Enter your question:</label><br>
+        <input type="text" id="question" name="question" placeholder="Ask your question here" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if question %}
+        <h3>Question: {{ question }}</h3>
+        <h4>Answer:</h4>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
